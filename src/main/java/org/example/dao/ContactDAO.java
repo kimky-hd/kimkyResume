@@ -1,6 +1,5 @@
 package org.example.dao;
 
-import org.example.context.DBContext;
 import org.example.model.Contact;
 
 import java.sql.Connection;
