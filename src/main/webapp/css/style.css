@@ -1,0 +1,67 @@
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 24px;
+    width: 3px;
+    background: #cbd5e1;
+    border-radius: 99px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+.project-bg-1 {
+    /* IMG HERE: Replace the URL below with your local image path, e.g., url('../img/project1.jpg') */
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAX0-KjhsinrBR9Z1KJP3nP2E-Y6TcK2ljm7PGf2CmGZjojh9_mbZX_FZzlLZEfOQek1BZZz88BZxsEttK0-FHFIIMxYzLVMEL3r3UpjYmwcAoV-HmbNqsFA0juWJq-ShPHrqJ_IWsfIUfVhAASOZSJYqX1vsqRGXA-aPf-SXhKwXjlVYwXNYeVhSMzh_AnbDorb73YzGT-04XDb08ndhOirCvD4sI1gGQP2va0VBdNiLBs3JytLt0zVnKMpeewz7rSQqYBbs8nO2vi");
+}
+
+.project-bg-2 {
+    /* IMG HERE: Replace the URL below with your local image path, e.g., url('../img/project2.jpg') */
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxyJ0ohAHngqvtnG2kTSESel4pLD_PnO5Cw0XN37B_glvfQOAMmGUsoSnNakv3J1AdnsDPED-mTwiZvsG4Gd77i7bgOPIi3pl2LMQY8fT7iWFytB6W7tx52FkVSMtLRND_UiXPoPfi3n18Hl3CLAkBu6_nCmgScBhzVUlx8TXGnytbqhGaw514b2NGBj-xZwsSqTV_Sy4giJS-hA_JBvz3eWkni20P6NfvShVpi2zvLRbu09pdLcHMBy39zKSVBIXp60PxA_M_1vdp");
+}
+
+.w-80-percent {
+    width: 80%;
+}
+
+.w-100-percent {
+    width: 100%;
+}
+
+.w-40-percent {
+    width: 40%;
+}
+
+.text-24px {
+    font-size: 24px;
+}
