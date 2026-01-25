@@ -241,8 +241,7 @@
                                     class="bg-pastel-sky/30 border border-sky-100 p-8 rounded-3xl hover:shadow-lg hover:bg-pastel-sky/50 transition-all duration-300">
                                     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                                         <div>
-                                            <h3 class="text-xl font-extrabold text-text-heading">Securities Project and
-                                                Operations</h3>
+                                            <h3 class="text-xl font-extrabold text-text-heading">Business Analyst</h3>
                                             <h4 class="text-vibrant-blue font-bold text-lg mt-1">VPS Securities</h4>
                                         </div>
                                         <span
