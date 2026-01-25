@@ -7,17 +7,16 @@ import java.sql.SQLException;
 public class DBContext {
 
     public static Connection getConnection() throws SQLException {
-        // 1. Thử lấy thông tin từ Biến môi trường (Dành cho Render/Cloud)
-        String url = System.getenv("jdbc:mysql://mysql-37d9fa06-kimkyresume.h.aivencloud.com:26236/defaultdb?ssl-mode=REQUIRED");
-        String user = System.getenv("avnadmin");
-        String pass = System.getenv("AVNS_mkjQBkSG-PoBr6FfNE5");
+        // ĐỌC TÊN BIẾN (KEY) TRÊN RENDER - KHÔNG ĐƯỢC SỬA 3 DÒNG NÀY
+        String url = System.getenv("DB_URL");
+        String user = System.getenv("DB_USER");
+        String pass = System.getenv("DB_PASS");
 
-        // 2. Nếu không có biến môi trường (Chạy ở Local), sử dụng cấu hình mặc định
+        // Nếu chạy ở Local (url sẽ null), dùng thông số máy cá nhân
         if (url == null || url.isEmpty()) {
-            // Cấu hình cho Localhost của bạn
             url = "jdbc:mysql://localhost:3306/resume_db";
             user = "root";
-            pass = "1234"; // Mật khẩu máy cá nhân của bạn
+            pass = "1234";
         }
 
         try {
@@ -28,7 +27,6 @@ public class DBContext {
         }
     }
 
-    // Test kết nối nhanh
     public static void main(String[] args) {
         try {
             Connection conn = getConnection();
