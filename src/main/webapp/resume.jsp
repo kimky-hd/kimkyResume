@@ -20,12 +20,13 @@
 
     <body class="font-display text-text-main antialiased bg-slate-50 selection:bg-vibrant-teal selection:text-white">
         <!-- Intro Overlay -->
-        <div id="intro-overlay">
-            <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter text-slate-900">
+        <!-- Intro Overlay -->
+        <div id="intro-overlay" class="px-4 text-center">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-black mb-4 tracking-tighter text-slate-900">
                 <span id="intro-hi"></span><span id="intro-name"
                     class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue hero-animate-text"></span>
             </h1>
-            <h2 id="intro-job" class="text-2xl md:text-4xl font-bold text-vibrant-teal tracking-wide"></h2>
+            <h2 id="intro-job" class="text-xl md:text-4xl font-bold text-vibrant-teal tracking-wide"></h2>
         </div>
 
         <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
