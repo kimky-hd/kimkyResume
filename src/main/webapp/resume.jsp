@@ -13,6 +13,7 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
             rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/tailwind-config.js"></script>
     </head>
 
@@ -46,7 +47,7 @@
                                         <h1
                                             class="text-text-heading text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
                                             Hi, I'm <span
-                                                class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue">Vu
+                                                class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue hero-animate-text">Vu
                                                 Kim Ky</span>
                                         </h1>
                                         <h2 class="text-slate-500 text-2xl md:text-4xl font-bold leading-tight">
@@ -97,7 +98,7 @@
             <div class="layout-container flex flex-col w-full py-20 bg-white/50 backdrop-blur-sm relative z-10"
                 id="about">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
-                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1" data-aos="fade-up">
                         <div class="flex flex-col items-center gap-2 mb-16 text-center">
                             <span class="text-vibrant-teal font-bold tracking-widest uppercase text-sm">Discover</span>
                             <h2 class="text-text-heading text-3xl md:text-4xl font-extrabold">About Me</h2>
@@ -158,25 +159,48 @@
                                         <span class="material-symbols-outlined text-vibrant-teal">psychology</span>
                                         Skills &amp; Tools
                                     </h3>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-4 py-2 bg-pastel-mint text-emerald-800 rounded-lg font-bold text-sm shadow-sm">BPMN</span>
-                                        <span
-                                            class="px-4 py-2 bg-pastel-sky text-sky-800 rounded-lg font-bold text-sm shadow-sm">SQL</span>
-                                        <span
-                                            class="px-4 py-2 bg-pastel-lavender text-purple-800 rounded-lg font-bold text-sm shadow-sm">Figma</span>
-                                        <span
-                                            class="px-4 py-2 bg-pastel-peach text-orange-800 rounded-lg font-bold text-sm shadow-sm">JIRA/Confluence</span>
-                                        <span
-                                            class="px-4 py-2 bg-pastel-rose text-rose-800 rounded-lg font-bold text-sm shadow-sm">Data
-                                            Analysis</span>
-                                        <span
-                                            class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm">Agile/Scrum</span>
-                                        <span
-                                            class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm">BRD/SRS
-                                            Writing</span>
-                                        <span
-                                            class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm">UAT</span>
+                                    <div class="marquee-container w-full">
+                                        <div class="marquee-content py-2">
+                                            <!-- Original List -->
+                                            <span
+                                                class="px-4 py-2 bg-pastel-mint text-emerald-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">BPMN</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-sky text-sky-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">SQL</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-lavender text-purple-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Figma</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-peach text-orange-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">JIRA/Confluence</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-rose text-rose-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Data
+                                                Analysis</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Agile/Scrum</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">BRD/SRS
+                                                Writing</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">UAT</span>
+
+                                            <!-- Duplicated List for Seamless Loop -->
+                                            <span
+                                                class="px-4 py-2 bg-pastel-mint text-emerald-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">BPMN</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-sky text-sky-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">SQL</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-lavender text-purple-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Figma</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-peach text-orange-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">JIRA/Confluence</span>
+                                            <span
+                                                class="px-4 py-2 bg-pastel-rose text-rose-800 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Data
+                                                Analysis</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">Agile/Scrum</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">BRD/SRS
+                                                Writing</span>
+                                            <span
+                                                class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-bold text-sm shadow-sm whitespace-nowrap">UAT</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="glass-panel p-8 rounded-3xl shadow-lg shadow-slate-100">
@@ -225,7 +249,7 @@
             </div>
             <div class="layout-container flex flex-col w-full py-20 relative z-10" id="experience">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
-                    <div class="layout-content-container flex flex-col max-w-[900px] flex-1">
+                    <div class="layout-content-container flex flex-col max-w-[900px] flex-1" data-aos="fade-up">
                         <div class="flex flex-col items-center gap-2 mb-16 text-center">
                             <span class="text-vibrant-blue font-bold tracking-widest uppercase text-sm">Career
                                 Path</span>
@@ -233,7 +257,7 @@
                             <div class="w-16 h-1.5 bg-pastel-sky rounded-full mt-2"></div>
                         </div>
                         <div class="relative pl-12 timeline-line space-y-12">
-                            <div class="relative group">
+                            <div class="relative group" data-aos="fade-up" data-aos-delay="100">
                                 <div
                                     class="absolute -left-[58px] top-6 size-5 bg-white rounded-full border-4 border-vibrant-teal shadow-md z-10 group-hover:scale-125 transition-transform">
                                 </div>
@@ -262,7 +286,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="relative group">
+                            <div class="relative group" data-aos="fade-up" data-aos-delay="200">
                                 <div
                                     class="absolute -left-[58px] top-6 size-5 bg-white rounded-full border-4 border-vibrant-purple shadow-md z-10 group-hover:scale-125 transition-transform">
                                 </div>
@@ -289,7 +313,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="relative group">
+                            <div class="relative group" data-aos="fade-up" data-aos-delay="300">
                                 <div
                                     class="absolute -left-[58px] top-6 size-5 bg-white rounded-full border-4 border-orange-400 shadow-md z-10 group-hover:scale-125 transition-transform">
                                 </div>
@@ -321,7 +345,7 @@
             <div class="layout-container flex flex-col w-full py-20 bg-white/50 backdrop-blur-sm relative z-10"
                 id="projects">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
-                    <div class="layout-content-container flex flex-col max-w-[1100px] flex-1">
+                    <div class="layout-content-container flex flex-col max-w-[1100px] flex-1" data-aos="fade-up">
                         <div class="flex flex-col items-center gap-2 mb-16 text-center">
                             <span
                                 class="text-vibrant-purple font-bold tracking-widest uppercase text-sm">Portfolio</span>
@@ -334,8 +358,8 @@
                                     class="p-1 bg-teal-100 rounded text-vibrant-teal material-symbols-outlined text-sm">terminal</span>
                                 Technical / Professional
                             </h3>
-                            <div
-                                class="bg-white rounded-3xl shadow-xl shadow-slate-200 overflow-hidden border border-slate-100 flex flex-col lg:flex-row">
+                            <div class="bg-white rounded-3xl shadow-xl shadow-slate-200 overflow-hidden border border-slate-100 flex flex-col lg:flex-row"
+                                data-aos="fade-up" data-aos-delay="100">
                                 <div class="lg:w-7/12 h-[300px] lg:h-auto bg-slate-100 relative group overflow-hidden">
                                     <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                                         style="background-image: url('img/Screenshot_40.png');">
@@ -383,8 +407,8 @@
                                 Social / Leadership
                             </h3>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <div
-                                    class="bg-pastel-mint/30 rounded-3xl p-8 border border-emerald-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-100 transition-all duration-300 flex flex-col">
+                                <div class="bg-pastel-mint/30 rounded-3xl p-8 border border-emerald-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-100 transition-all duration-300 flex flex-col"
+                                    data-aos="fade-up" data-aos-delay="200">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-emerald-100 rounded-2xl text-emerald-600">
                                             <span class="material-symbols-outlined text-3xl">directions_bus</span>
@@ -401,8 +425,8 @@
                                         class="inline-block px-3 py-1 bg-white text-emerald-700 text-xs font-bold rounded-lg self-start">Project
                                         Manager</span>
                                 </div>
-                                <div
-                                    class="bg-pastel-lavender/30 rounded-3xl p-8 border border-violet-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-100 transition-all duration-300 flex flex-col">
+                                <div class="bg-pastel-lavender/30 rounded-3xl p-8 border border-violet-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-100 transition-all duration-300 flex flex-col"
+                                    data-aos="fade-up" data-aos-delay="300">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-violet-100 rounded-2xl text-violet-600">
                                             <span class="material-symbols-outlined text-3xl">rocket_launch</span>
@@ -419,8 +443,8 @@
                                         class="inline-block px-3 py-1 bg-white text-violet-700 text-xs font-bold rounded-lg self-start">Deputy
                                         Head</span>
                                 </div>
-                                <div
-                                    class="bg-pastel-rose/30 rounded-3xl p-8 border border-rose-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-100 transition-all duration-300 flex flex-col">
+                                <div class="bg-pastel-rose/30 rounded-3xl p-8 border border-rose-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-100 transition-all duration-300 flex flex-col"
+                                    data-aos="fade-up" data-aos-delay="400">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-rose-100 rounded-2xl text-rose-500">
                                             <span class="material-symbols-outlined text-3xl">groups</span>
@@ -443,14 +467,15 @@
             </div>
             <div class="layout-container flex flex-col w-full py-20 relative z-10">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
-                    <div class="layout-content-container flex flex-col max-w-[900px] flex-1 text-center">
+                    <div class="layout-content-container flex flex-col max-w-[900px] flex-1 text-center"
+                        data-aos="fade-up">
                         <div class="flex flex-col items-center gap-2 mb-12">
                             <span class="text-orange-500 font-bold tracking-widest uppercase text-sm">Awards</span>
                             <h2 class="text-text-heading text-3xl font-extrabold">Achievements &amp; Recognitions</h2>
                             <div class="w-16 h-1.5 bg-pastel-peach rounded-full mt-2"></div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div class="group relative">
+                            <div class="group relative" data-aos="zoom-in" data-aos-delay="100">
                                 <div
                                     class="absolute inset-0 bg-pastel-peach rounded-full blur-xl opacity-50 group-hover:opacity-80 transition-opacity">
                                 </div>
@@ -479,7 +504,7 @@
                                     <p class="text-text-main text-sm font-medium">"Launch To Leader" competition</p>
                                 </div>
                             </div>
-                            <div class="group relative">
+                            <div class="group relative" data-aos="zoom-in" data-aos-delay="300">
                                 <div
                                     class="absolute inset-0 bg-pastel-mint rounded-full blur-xl opacity-50 group-hover:opacity-80 transition-opacity">
                                 </div>
@@ -501,7 +526,7 @@
             <div class="layout-container flex flex-col w-full py-24 bg-white/50 backdrop-blur-sm relative z-10"
                 id="contact">
                 <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center">
-                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+                    <div class="layout-content-container flex flex-col max-w-[1000px] flex-1" data-aos="fade-up">
                         <div
                             class="bg-white rounded-[40px] shadow-2xl shadow-slate-200 border border-slate-100 overflow-hidden flex flex-col md:flex-row">
                             <div
@@ -586,6 +611,14 @@
 
         </div>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 50
+            });
+        </script>
     </body>
 
     </html>
