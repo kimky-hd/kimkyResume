@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Debugging
     console.log("Intro script loaded");
 
-    // Ensure overlay is visible
+    // Ensure overlay is visible (CSS handles this now, but we keep this for safety)
     if (overlay) {
-        overlay.style.display = "flex";
-        console.log("Overlay set to flex");
+        // overlay.style.display = "flex"; // Already set in CSS to avoid flash
+        console.log("Intro initialized");
     } else {
         console.error("Intro overlay not found!");
         return;
