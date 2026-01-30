@@ -160,7 +160,7 @@ button {
     height: 100vh;
     background-color: #f8fafc;
     /* Slate 50 - White/Light background */
-    z-index: 9999;
+    z-index: 99999999;
     display: none;
     /* JS will toggle flex */
     flex-direction: column;

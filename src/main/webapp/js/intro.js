@@ -18,6 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.body.style.overflow = "hidden"; // Prevent scrolling
 
+    // SAFETY MECHANISM: Force hide overlay after 5 seconds
+    // This solves the issue where the animation might get stuck on production due to race conditions
+    setTimeout(() => {
+        if (overlay && overlay.style.display !== "none") {
+            console.warn("Intro animation timed out. Forcing finish.");
+            finishIntro();
+        }
+    }, 5000); // 5 seconds safety net
+
     // Text Content
     const strHi = "Hi, I'm ";
     const strName = "KimKy Vu";
