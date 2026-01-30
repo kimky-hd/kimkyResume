@@ -15,7 +15,7 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/tailwind-config.js"></script>
-        <script src="js/intro.js" defer></script>
+        <script src="js/intro.js?v=2" defer></script>
     </head>
 
     <body class="font-display text-text-main antialiased bg-slate-50 selection:bg-vibrant-teal selection:text-white">

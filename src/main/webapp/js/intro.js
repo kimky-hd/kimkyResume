@@ -4,8 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const spanName = document.getElementById("intro-name");
     const h2Job = document.getElementById("intro-job");
 
+    // Debugging
+    console.log("Intro script loaded");
+
     // Ensure overlay is visible
-    overlay.style.display = "flex";
+    if (overlay) {
+        overlay.style.display = "flex";
+        console.log("Overlay set to flex");
+    } else {
+        console.error("Intro overlay not found!");
+        return;
+    }
+
     document.body.style.overflow = "hidden"; // Prevent scrolling
 
     // Text Content
