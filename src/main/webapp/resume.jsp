@@ -15,20 +15,21 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="js/tailwind-config.js"></script>
+        <script src="js/intro.js" defer></script>
     </head>
 
     <body class="font-display text-text-main antialiased bg-slate-50 selection:bg-vibrant-teal selection:text-white">
+        <!-- Intro Overlay -->
+        <div id="intro-overlay">
+            <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter text-slate-900">
+                <span id="intro-hi"></span><span id="intro-name"
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue hero-animate-text"></span>
+            </h1>
+            <h2 id="intro-job" class="text-2xl md:text-4xl font-bold text-vibrant-teal tracking-wide"></h2>
+        </div>
+
         <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-            <div class="fixed inset-0 overflow-hidden pointer-events-none">
-                <div class="blob bg-pastel-sky w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2">
-                </div>
-                <div
-                    class="blob bg-pastel-lavender w-[500px] h-[500px] rounded-full bottom-0 right-0 translate-x-1/3 -translate-y-1/3">
-                </div>
-                <div
-                    class="blob bg-pastel-peach w-80 h-80 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-40">
-                </div>
-            </div>
+
 
             <jsp:include page="header.jsp" />
 
@@ -47,8 +48,8 @@
                                         <h1
                                             class="text-text-heading text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
                                             Hi, I'm <span
-                                                class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue hero-animate-text">Vu
-                                                Kim Ky</span>
+                                                class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-teal to-vibrant-blue hero-animate-text">KimKy
+                                                Vu</span>
                                         </h1>
                                         <h2 class="text-slate-500 text-2xl md:text-4xl font-bold leading-tight">
                                             IT Business Analyst.
@@ -407,13 +408,16 @@
                                 Social / Leadership
                             </h3>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <div class="bg-pastel-mint/30 rounded-3xl p-8 border border-emerald-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-100 transition-all duration-300 flex flex-col"
+                                <a href="https://www.facebook.com/HolaBusFPTU.CSKH" target="_blank"
+                                    class="bg-pastel-mint/30 rounded-3xl p-8 border border-emerald-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-100 transition-all duration-300 flex flex-col group cursor-pointer"
                                     data-aos="fade-up" data-aos-delay="200">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-emerald-100 rounded-2xl text-emerald-600">
                                             <span class="material-symbols-outlined text-3xl">directions_bus</span>
                                         </div>
-                                        <span class="material-symbols-outlined text-emerald-400">open_in_new</span>
+                                        <div class="text-emerald-400 group-hover:text-emerald-600 transition-colors">
+                                            <span class="material-symbols-outlined">open_in_new</span>
+                                        </div>
                                     </div>
                                     <h4 class="text-text-heading text-xl font-extrabold mb-2">Hola Bus Project</h4>
                                     <p class="text-text-main text-sm mb-6 flex-grow">
@@ -424,14 +428,17 @@
                                     <span
                                         class="inline-block px-3 py-1 bg-white text-emerald-700 text-xs font-bold rounded-lg self-start">Project
                                         Manager</span>
-                                </div>
-                                <div class="bg-pastel-lavender/30 rounded-3xl p-8 border border-violet-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-100 transition-all duration-300 flex flex-col"
+                                </a>
+                                <a href="https://www.facebook.com/socialinnovationlaunch" target="_blank"
+                                    class="bg-pastel-lavender/30 rounded-3xl p-8 border border-violet-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-violet-100 transition-all duration-300 flex flex-col group cursor-pointer"
                                     data-aos="fade-up" data-aos-delay="300">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-violet-100 rounded-2xl text-violet-600">
                                             <span class="material-symbols-outlined text-3xl">rocket_launch</span>
                                         </div>
-                                        <span class="material-symbols-outlined text-violet-400">open_in_new</span>
+                                        <div class="text-violet-400 group-hover:text-violet-600 transition-colors">
+                                            <span class="material-symbols-outlined">open_in_new</span>
+                                        </div>
                                     </div>
                                     <h4 class="text-text-heading text-xl font-extrabold mb-2">Social Innovation Launch
                                         (SiL 2024)</h4>
@@ -442,14 +449,17 @@
                                     <span
                                         class="inline-block px-3 py-1 bg-white text-violet-700 text-xs font-bold rounded-lg self-start">Deputy
                                         Head</span>
-                                </div>
-                                <div class="bg-pastel-rose/30 rounded-3xl p-8 border border-rose-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-100 transition-all duration-300 flex flex-col"
+                                </a>
+                                <a href="https://www.facebook.com/FU.Business" target="_blank"
+                                    class="bg-pastel-rose/30 rounded-3xl p-8 border border-rose-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-rose-100 transition-all duration-300 flex flex-col group cursor-pointer"
                                     data-aos="fade-up" data-aos-delay="400">
                                     <div class="flex justify-between items-start mb-6">
                                         <div class="p-3 bg-rose-100 rounded-2xl text-rose-500">
                                             <span class="material-symbols-outlined text-3xl">groups</span>
                                         </div>
-                                        <span class="material-symbols-outlined text-rose-400">open_in_new</span>
+                                        <div class="text-rose-400 group-hover:text-rose-600 transition-colors">
+                                            <span class="material-symbols-outlined">open_in_new</span>
+                                        </div>
                                     </div>
                                     <h4 class="text-text-heading text-xl font-extrabold mb-2">FPTU Business Club</h4>
                                     <p class="text-text-main text-sm mb-6 flex-grow">
@@ -459,7 +469,7 @@
                                     <span
                                         class="inline-block px-3 py-1 bg-white text-rose-700 text-xs font-bold rounded-lg self-start">Vice
                                         President</span>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

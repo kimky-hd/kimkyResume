@@ -5,11 +5,15 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.blob {
+/* Antigravity Dot Field */
+.particle {
     position: absolute;
-    filter: blur(80px);
+    /* background-color set by JS */
+    border-radius: 50%;
+    will-change: transform;
+    pointer-events: none;
     z-index: -1;
-    opacity: 0.6;
+    /* No CSS animation, handled by JS physics */
 }
 
 .timeline-line::before {
@@ -145,4 +149,65 @@ button.bg-vibrant-teal:hover {
 a,
 button {
     transition: all 0.3s ease-in-out;
+}
+
+/* --- INTRO OVERLAY --- */
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8fafc;
+    /* Slate 50 - White/Light background */
+    z-index: 9999;
+    display: none;
+    /* JS will toggle flex */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0f172a;
+    /* Slate 900 - Dark Text */
+    /* Transition handled by animation class */
+}
+
+/* New Exit Animation: Blur and Fade Out */
+#intro-overlay.intro-exit {
+    animation: intro-dissolve 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes intro-dissolve {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.1);
+        /* Slight scale up for "floating away" feel */
+        filter: blur(20px);
+        /* Heavy blur */
+    }
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    margin-left: 4px;
+    color: #14b8a6;
+    /* Vibrant Teal */
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
