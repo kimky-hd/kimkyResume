@@ -5,11 +5,7 @@
                 <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
                     <header class="flex items-center justify-between whitespace-nowrap py-3">
                         <div class="flex items-center gap-3">
-                            <div
-                                class="size-10 flex items-center justify-center rounded-xl bg-vibrant-teal text-white shadow-lg shadow-teal-200">
-                                <span class="material-symbols-outlined text-24px">terminal</span>
-                            </div>
-                            <h2 class="text-text-heading text-xl font-extrabold tracking-tight">KimKy Vu</h2>
+                            <img src="img/logo.png" alt="KimKy Vu Logo" class="h-10 w-auto object-contain">
                         </div>
                         <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
                             <nav class="flex items-center gap-8">
@@ -24,7 +20,8 @@
                                 <a class="text-text-heading hover:text-vibrant-teal transition-colors text-sm font-semibold"
                                     href="#contact">Contact</a>
                             </nav>
-                            <a href="files/%5BResume%5D%20-%20Vu%20Kim%20Ky%20-%20IT%20Business%20Analyst.pdf" download="Vu Kim Ky _ Business Analyst.pdf"
+                            <a href="files/%5BResume%5D%20-%20Vu%20Kim%20Ky%20-%20IT%20Business%20Analyst.pdf"
+                                download="Vu Kim Ky _ Business Analyst.pdf"
                                 class="flex items-center justify-center overflow-hidden rounded-full bg-text-heading text-white hover:bg-vibrant-teal transition-all shadow-md h-10 px-6 text-sm font-bold">
                                 <span class="truncate">Resume</span>
                             </a>

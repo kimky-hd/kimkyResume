@@ -630,6 +630,12 @@
                 offset: 50
             });
         </script>
+        <!-- Admin Access FAB -->
+        <a href="login.jsp"
+            class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-slate-900 text-white rounded-full shadow-lg hover:bg-black hover:scale-110 hover:shadow-xl transition-all duration-300 group flex items-center justify-center"
+            title="Go to Admin Portal">
+            <span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform">brush</span>
+        </a>
     </body>
 
     </html>
